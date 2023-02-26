@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .openNav {
+  .navbar {
     display: none;
   }
   
@@ -19,26 +19,57 @@
 /*Medium mobile screen*/
 @media screen and (max-width: 600px) {
   
+  .navbar {
+    height: 50px;
+    width: 100%;
+    background: var(--button-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .open {
     width: 80vw;
   }
   
   .openNav {
-    display: block;
-    height: 20px;
     z-index: 99;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: display 0.5s;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 35px;
+    color: var(--primary-text);
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .navbar button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
   }
   
   .closeBtn {
     display: block;
-    font-size: 24px;
+    font-size: 50px;
+    font-weight: 200;
+    color: var(--primary-text);
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 20px;
+    border: none;
+    background: none;
+    outline: none;
   }
   
   .header-container {
@@ -50,7 +81,7 @@
     overflow-x: hidden;
     transition: width .5s ease;
     z-index: 100;
-    background-color: red;
+    background: var(--header-footer-bgc);
     display: flex;
     justify-content: center;
   }
@@ -63,6 +94,87 @@
   .links ul {
     display: flex;
     flex-direction: column;
+  }
+  
+  .sub-header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sub-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .left {
+    margin: 10px 20px 20px 20px;
+  }
+  
+  .right {
+    margin: 20px 0 0 0;
+    
+  }
+  
+  .right img {
+    height: 200px;
+    width: auto;
+  }
+  
+  .info-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info-container h1 {
+    font-size: 28px;
+  }
+  
+  .image-grid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .grid-item {
+    width: 100%;
+  }
+  
+  .item-one {
+    margin-top: 0;
+  }
+  
+  .grid-item img {
+    height: 200px;
+    width: auto;
+  }
+  
+  .grid-item p {
+    margin: 10px 30px;
+  }
+  
+  .quote-container,
+  .quote-author {
+    margin: 20px;
+  }
+  
+  .signup-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--primary-text);
+  }
+  
+  .signup-btn {
+    margin: 20px 0 5px 0;
+    font-size: 16px;
+  }
+  
+  .signup-btn a {
+    padding: 10px 20px;
   }
 
 }
