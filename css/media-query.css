@@ -1,0 +1,68 @@
+:root {
+  --header-footer-bgc: #1f2937;
+  --primary-text: #f9faf8;
+  --quote-bgc: #e5e7eb;
+  --button-bgc: #3882f6;
+  --body-bgc: #ebf5f8;
+}
+
+@media screen and (max-width: 1024px) {
+  .openNav {
+    display: none;
+  }
+  
+  .closeBtn {
+    display: none;
+  }
+}
+
+/*Medium mobile screen*/
+@media screen and (max-width: 600px) {
+  
+  .open {
+    width: 80vw;
+  }
+  
+  .openNav {
+    display: block;
+    height: 20px;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: display 0.5s;
+  }
+  
+  .closeBtn {
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width .5s ease;
+    z-index: 100;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
