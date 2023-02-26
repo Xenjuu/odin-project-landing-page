@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
   --header-footer-bgc: #1f2937;
   --primary-text: #f9faf8;
-  --secondary-text: #e5e7eb;
+  --quote-bgc: #e5e7eb;
   --button-bgc: #3882f6;
   --body-bgc: #ebf5f8;
 }
@@ -34,6 +35,8 @@
 
 .logo {
   margin: 10px;
+  font-size: 24px;
+  color: var(--primary-text);
 }
 
 .links {
@@ -53,7 +56,8 @@
 
 .links ul li a {
   text-decoration: none;
-  color: var(--primary-text);
+  color: var(--quote-bgc);
+  font-size: 18px;
 }
 
 .sub-header {
@@ -71,8 +75,14 @@
   text-align: center;
 }
 
+.left h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
 .left p {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .left a {
@@ -100,22 +110,106 @@
 .info-container {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background: var(--body-bgc);
+  color: var(--header-footer-bgc);
+}
+
+.info-container h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 30px 50px 0 50px;
+  color: var(--header-footer-bgc);
 }
 
 .image-grid {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   flex: 1;
-  width: 1080px;
-  height: 500px;
-  background: var(--body-bgc);
+  margin: 40px 0;
 }
 
-.grid-item img{
+.grid-item {
+  width: 25%;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.image-grid img {
   height: 200px;
   width: 200px;
   border-radius: 10px;
+}
+
+
+
+.quote-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: var(--quote-bgc);
+  color: var(--header-footer-bgc);
+}
+
+.quote-container {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 100px;
+}
+
+.quote-author {
+  text-align: right;
+  margin: 20px 100px 0 0;
+}
+
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--body-bgc);
+}
+
+.signup-container {
+  background: var(--button-bgc);
+  width: 100%;
+  margin: 5% 20%;
+  padding: 20px 30px;
   box-sizing: border-box;
-  border: 2px solid var(--button-bgc);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.signup-text h1{
+  font-weight: 400;
+}
+
+.signup-btn a{
+  text-decoration: none;
+  color: var(--primary-text);
+  border: 1px solid var(--primary-text);
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--header-footer-bgc);
+  color: var(--primary-text);
+}
+
+.footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
